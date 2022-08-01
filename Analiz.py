@@ -1,8 +1,6 @@
 import pandas as pd
-import json
 from tabulate import tabulate
-import holoviews as hv
-import numpy as np
+
 
 YourId="12345" #Твой Рег.№ номер
 ExamScore=250
