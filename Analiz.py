@@ -1,9 +1,9 @@
 import pandas as pd
 from tabulate import tabulate
+import PersInfo
 
-
-YourId="12345" #Твой Рег.№ номер
-ExamScore=250
+YourId=PersInfo.YourId #Твой Рег.№ номер
+ExamScore=PersInfo.ExamScore    #Баллы егэ
 def DataProc(df):
     df["Рег.№"]=df["Рег.№"].astype(str)
     df.loc[df["Вступительные испытания по предметам"]=="Без вступительных испытаний","Сумма конкурсных баллов"]=310
