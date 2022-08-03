@@ -5,6 +5,7 @@ import PersInfo
 YourId=PersInfo.YourId #Твой Рег.№ номер
 ExamScore=PersInfo.ExamScore    #Баллы егэ
 def DataProc(df):
+    
     df["Рег.№"]=df["Рег.№"].astype(str)
     df.loc[df["Вступительные испытания по предметам"]=="Без вступительных испытаний","Сумма конкурсных баллов"]=310
     c=[
